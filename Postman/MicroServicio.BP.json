@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "38ed07ba-8498-41c6-bc4e-f9e48376f690",
+		"name": "MicroServicio.BP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Creacion Clientes",
+			"item": [
+				{
+					"name": "Cliente Jose",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cl_identificacion\": \"1801104777\",\r\n  \"cl_nombre\": \"Jose Lema\",\r\n  \"cl_genero\": \"Masculino\",\r\n  \"cl_edad\": 20,\r\n  \"cl_direccion\": \"Otavalo sn y principal\",\r\n  \"cl_telefono\": \"098254785\",\r\n  \"cl_id_cliente\": 0,\r\n  \"cl_contrasenia\": \"1234\",\r\n  \"cl_estado\": true\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Clientes/InsertarCliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Clientes",
+								"InsertarCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente Marianela",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cl_identificacion\": \"0504030201\",\r\n  \"cl_nombre\": \"Marianela Montalvo\",\r\n  \"cl_genero\": \"Femenino\",\r\n  \"cl_edad\": 40,\r\n  \"cl_direccion\": \"Amazonas y NNUU\",\r\n  \"cl_telefono\": \"097548965\",\r\n  \"cl_id_cliente\": 0,\r\n  \"cl_contrasenia\": \"5678\",\r\n  \"cl_estado\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Clientes/InsertarCliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Clientes",
+								"InsertarCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente Juan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cl_identificacion\": \"1801701600\",\r\n  \"cl_nombre\": \"Juan Osorio\",\r\n  \"cl_genero\": \"M\",\r\n  \"cl_edad\": 45,\r\n  \"cl_direccion\": \"13 junio y Equinoccial\",\r\n  \"cl_telefono\": \"098874587\",\r\n  \"cl_id_cliente\": 0,\r\n  \"cl_contrasenia\": \"1245\",\r\n  \"cl_estado\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Clientes/InsertarCliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Clientes",
+								"InsertarCliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Creacion Cuentas",
+			"item": [
+				{
+					"name": "Cuenta Jose",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cu_numero\": \"478758\",\r\n  \"cu_id_cliente\": 1,\r\n  \"cu_tipo\": \"Ahorro\",\r\n  \"cu_saldo\": 2000,\r\n  \"cu_estado\": true\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Cuentas/InsertarCuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Cuentas",
+								"InsertarCuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "Cuenta Jose 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cu_numero\": \"585545\",\r\n  \"cu_id_cliente\": 1,\r\n  \"cu_tipo\": \"Corriente\",\r\n  \"cu_saldo\": 1000,\r\n  \"cu_estado\": true\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Cuentas/InsertarCuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Cuentas",
+								"InsertarCuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "Cuenta Marianela 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cu_numero\": \"225487\",\r\n  \"cu_id_cliente\": 2,\r\n  \"cu_tipo\": \"Corriente\",\r\n  \"cu_saldo\": 100,\r\n  \"cu_estado\": true\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Cuentas/InsertarCuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Cuentas",
+								"InsertarCuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "Cuenta Juan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"495878\",\r\n  \"cliIdCliente\": 3,\r\n  \"cueTipo\": \"Ahorro\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 0\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Cuentas/InsertarCuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Cuentas",
+								"InsertarCuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "Cuenta Marianela 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cu_numero\": \"496825\",\r\n  \"cu_id_cliente\": 2,\r\n  \"cu_tipo\": \"Ahorros\",\r\n  \"cu_saldo\": 540,\r\n  \"cu_estado\": true\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Cuentas/InsertarCuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Cuentas",
+								"InsertarCuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos Cuentas",
+			"item": [
+				{
+					"name": "Movimientos Jose",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"mo_numero_cuenta\": \"478758\",\r\n  \"mo_fecha\": \"2022-05-29T23:19:09.812Z\",\r\n  \"mo_tipo\": \"Retiro\",\r\n  \"mo_valor\": 575\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Movimientos/InsertarMovimiento",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Movimientos",
+								"InsertarMovimiento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos Marianela 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"mo_numero_cuenta\": \"225487\",\r\n  \"mo_fecha\": \"2022-05-29T23:19:09.812Z\",\r\n  \"mo_tipo\": \"Deposito\",\r\n  \"mo_valor\": 600\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Movimientos/InsertarMovimiento",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Movimientos",
+								"InsertarMovimiento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos Juan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"mo_numero_cuenta\": \"495878\",\r\n  \"mo_fecha\": \"2022-05-29T23:19:09.812Z\",\r\n  \"mo_tipo\": \"Deposito\",\r\n  \"mo_valor\": 150\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Movimientos/InsertarMovimiento",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Movimientos",
+								"InsertarMovimiento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos Marianela 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"mo_numero_cuenta\": \"225487\",\r\n  \"mo_fecha\": \"2022-05-29T23:19:09.812Z\",\r\n  \"mo_tipo\": \"Retiro\",\r\n  \"mo_valor\": 540\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44336/api/Movimientos/InsertarMovimiento",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44336",
+							"path": [
+								"api",
+								"Movimientos",
+								"InsertarMovimiento"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
